@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Internship Opportunities</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- radios (none checked by default) -->
+  <input type="radio" name="internship" id="int1">
+  <input type="radio" name="internship" id="int2">
+  <input type="radio" name="internship" id="int3">
+  <input type="radio" name="internship" id="int4">
+
+  <main class="container">
+    <header class="page-header">
+      <h1>Explore Internship Opportunities</h1>
+      <p class="lead">Click a card to view internship details below.</p>
+    </header>
+
+    <!-- BIGGER CENTERED CARD GRID -->
+    <section class="card-list" aria-label="Internship cards">
+      <label for="int1" class="card-toggle" tabindex="0">
+        <div class="chip">SD</div>
+        <div class="ctitle">Software Dev Intern</div>
+        <div class="csub">3 months · Remote</div>
+      </label>
+
+      <label for="int2" class="card-toggle" tabindex="0">
+        <div class="chip">DS</div>
+        <div class="ctitle">Data Science Intern</div>
+        <div class="csub">4 months · Hybrid</div>
+      </label>
+
+      <label for="int3" class="card-toggle" tabindex="0">
+        <div class="chip">FE</div>
+        <div class="ctitle">Frontend Developer Intern</div>
+        <div class="csub">3 months · Remote</div>
+      </label>
+
+      <label for="int4" class="card-toggle" tabindex="0">
+        <div class="chip">CY</div>
+        <div class="ctitle">Cybersecurity Intern</div>
+        <div class="csub">2 months · Onsite</div>
+      </label>
+    </section>
+
+    <!-- DETAILS (placeholder shown until a card is selected) -->
+    <section class="content" aria-live="polite">
+      <!-- Placeholder shown by default; hidden when any radio is checked -->
+      <article class="detail placeholder">
+        <div class="detail-hero">
+          <h2>Choose an Internship</h2>
+          <p class="muted">No internship selected yet — click any card above to see details.</p>
+        </div>
+      </article>
+
+      <article class="detail detail-1" aria-labelledby="sd-title">
+        <div class="detail-hero">
+          <h2 id="sd-title">Software Development Internship</h2>
+          <p class="muted">Build backend services, scalable APIs and collaborate with product teams.</p>
+          <div class="cta">
+            <a class="btn primary" href="https://example.com/apply-software" target="_blank" rel="noopener">Apply</a>
+            <a class="btn ghost" href="https://example.com/learn-software" target="_blank" rel="noopener">Learn more</a>
+          </div>
+        </div>
+
+        <div class="effects-row">
+          <div class="effect-card"><div class="ec-icon">⚙️</div><h4>Build APIs</h4><p>REST & microservices</p></div>
+          <div class="effect-card accent"><div class="ec-icon">🧪</div><h4>Testing</h4><p>Unit & integration tests</p></div>
+          <div class="effect-card"><div class="ec-icon">🤝</div><h4>Teamwork</h4><p>Agile collaboration</p></div>
+        </div>
+
+        <div class="grid-two">
+          <div class="card"><h3>Key Responsibilities</h3>
+            <ul><li>Design & implement APIs in Java</li><li>Write tests & documentation</li><li>Participate in code reviews</li></ul>
+          </div>
+          <div class="card"><h3>Perks</h3>
+            <ul><li>Mentorship & certificate</li><li>Stipend</li><li>Workshops</li></ul>
+          </div>
+        </div>
+      </article>
+
+      <article class="detail detail-2" aria-labelledby="ds-title">
+        <div class="detail-hero">
+          <h2 id="ds-title">Data Science Internship</h2>
+          <p class="muted">Work on ML pipelines, exploratory analysis and model deployment.</p>
+          <div class="cta">
+            <a class="btn primary" href="https://example.com/apply-ds" target="_blank" rel="noopener">Apply</a>
+            <a class="btn ghost" href="https://example.com/learn-ds" target="_blank" rel="noopener">Learn more</a>
+          </div>
+        </div>
+
+        <div class="effects-row">
+          <div class="effect-card accent"><div class="ec-icon">📊</div><h4>EDA</h4><p>Insightful analysis</p></div>
+          <div class="effect-card"><div class="ec-icon">🤖</div><h4>Modeling</h4><p>Train & evaluate</p></div>
+          <div class="effect-card"><div class="ec-icon">🧰</div><h4>Tools</h4><p>Docker & MLflow</p></div>
+        </div>
+
+        <div class="grid-two">
+          <div class="card"><h3>Key Responsibilities</h3>
+            <ul><li>Data cleaning & EDA</li><li>Train baseline models</li><li>Collaborate on deployment</li></ul>
+          </div>
+          <div class="card"><h3>Perks</h3>
+            <ul><li>Dataset access</li><li>ML tooling</li><li>Mentor sessions</li></ul>
+          </div>
+        </div>
+      </article>
+
+      <article class="detail detail-3" aria-labelledby="fe-title">
+        <div class="detail-hero">
+          <h2 id="fe-title">Frontend Developer Internship</h2>
+          <p class="muted">Ship user-facing features using modern frameworks and strong UX practices.</p>
+          <div class="cta">
+            <a class="btn primary" href="https://example.com/apply-frontend" target="_blank" rel="noopener">Apply</a>
+            <a class="btn ghost" href="https://example.com/learn-frontend" target="_blank" rel="noopener">Learn more</a>
+          </div>
+        </div>
+
+        <div class="effects-row">
+          <div class="effect-card"><div class="ec-icon">🎨</div><h4>Design</h4><p>Pixel-perfect UI</p></div>
+          <div class="effect-card accent"><div class="ec-icon">⚡</div><h4>Performance</h4><p>Optimize load</p></div>
+          <div class="effect-card"><div class="ec-icon">♿</div><h4>Accessibility</h4><p>WCAG improvements</p></div>
+        </div>
+
+        <div class="grid-two">
+          <div class="card"><h3>Key Responsibilities</h3>
+            <ul><li>Implement responsive React components</li><li>Improve accessibility</li><li>Collaborate with designers</li></ul>
+          </div>
+          <div class="card"><h3>Perks</h3>
+            <ul><li>Design reviews</li><li>Portfolio projects</li><li>Production exposure</li></ul>
+          </div>
+        </div>
+      </article>
+
+      <article class="detail detail-4" aria-labelledby="cy-title">
+        <div class="detail-hero">
+          <h2 id="cy-title">Cybersecurity Internship</h2>
+          <p class="muted">Learn security auditing, vulnerability assessment and secure coding practices.</p>
+          <div class="cta">
+            <a class="btn primary" href="https://example.com/apply-cyber" target="_blank" rel="noopener">Apply</a>
+            <a class="btn ghost" href="https://example.com/learn-cyber" target="_blank" rel="noopener">Learn more</a>
+          </div>
+        </div>
+
+        <div class="effects-row">
+          <div class="effect-card"><div class="ec-icon">🔍</div><h4>Audit</h4><p>Vulnerability scans</p></div>
+          <div class="effect-card"><div class="ec-icon">🛡️</div><h4>Hardening</h4><p>Secure configs</p></div>
+          <div class="effect-card accent"><div class="ec-icon">📋</div><h4>Reporting</h4><p>Remediation guides</p></div>
+        </div>
+
+        <div class="grid-two">
+          <div class="card"><h3>Key Responsibilities</h3>
+            <ul><li>Perform scans & triage</li><li>Assist secure configs</li><li>Document findings</li></ul>
+          </div>
+          <div class="card"><h3>Perks</h3>
+            <ul><li>Hands-on labs</li><li>Toolchain exposure</li><li>Certificate</li></ul>
+          </div>
+        </div>
+      </article>
+    </section>
+  </main>
+</body>
+</html>
